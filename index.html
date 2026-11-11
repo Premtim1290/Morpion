@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Morpion — À vous de jouer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="game">
+      <p class="eyebrow">LE CLASSIQUE À DEUX</p>
+      <h1>Le morpion<span>.</span></h1>
+      <p class="intro">Deux joueurs, neuf cases. Alignez trois symboles.</p>
+
+      <div class="players" aria-label="Les deux joueurs">
+        <div class="player active" id="player-x"><span class="symbol-x">X</span> Joueur X</div>
+        <div class="player" id="player-o"><span class="symbol-o">O</span> Joueur O</div>
+      </div>
+
+      <p id="status" role="status" aria-live="polite" aria-atomic="true">Au tour de X</p>
+      <div class="board" role="group" aria-label="Grille de morpion, cases de 1 à 9">
+        <button class="cell" type="button" aria-label="Case 1, vide"></button>
+        <button class="cell" type="button" aria-label="Case 2, vide"></button>
+        <button class="cell" type="button" aria-label="Case 3, vide"></button>
+        <button class="cell" type="button" aria-label="Case 4, vide"></button>
+        <button class="cell" type="button" aria-label="Case 5, vide"></button>
+        <button class="cell" type="button" aria-label="Case 6, vide"></button>
+        <button class="cell" type="button" aria-label="Case 7, vide"></button>
+        <button class="cell" type="button" aria-label="Case 8, vide"></button>
+        <button class="cell" type="button" aria-label="Case 9, vide"></button>
+      </div>
+      <button id="restart" type="button">Nouvelle partie <span aria-hidden="true">↗</span></button>
+      <p class="hint">X commence · Chacun son tour · Trois à la suite</p>
+    </main>
+  </body>
+</html>
